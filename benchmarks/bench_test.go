@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/tendermint/iavl"
-	db "github.com/tendermint/tendermint/libs/db"
+	db "github.com/ColorPlatform/prism/libs/db"
 )
 
 const historySize = 20

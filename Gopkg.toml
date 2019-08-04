@@ -7,8 +7,8 @@
   version = "v0.14.0"
 
 [[constraint]]
-  name = "github.com/tendermint/tendermint"
-  version = "v0.30.0"
+  name = "github.com/ColorPlatform/prism"
+  version = "v0.0.0-20190603094734-d7a6196c61b7"
 
 [prune]
   go-tests = true

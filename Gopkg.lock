@@ -2,12 +2,34 @@
 
 
 [[projects]]
+  digest = "1:a7398e46eacbebded64db5fbc45249a6e61ee5a742d0d54439eca672520599c9"
+  name = "github.com/ColorPlatform/prism"
+  packages = [
+    "crypto/merkle",
+    "crypto/tmhash",
+    "libs/common",
+    "libs/db",
+    "libs/test",
+  ]
+  pruneopts = "UT"
+  revision = "0d985ede28bd6937fa9d3613618e42cab6fc871c"
+  version = "v0.0.1"
+
+[[projects]]
   digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
   pruneopts = "UT"
   revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
   version = "v1.1.1"
+
+[[projects]]
+  digest = "1:f2ac2c724fc8214bb7b9dd6d4f5b7a983152051f5133320f228557182263cb94"
+  name = "github.com/etcd-io/bbolt"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "a0458a2b35708eef59eb5f620ceb3cd1c01a824d"
+  version = "v1.3.3"
 
 [[projects]]
   digest = "1:704b145137b5555c6bac6a7e52875e4df8a0a1b7ea74aaae864abcab61e672b0"
@@ -38,7 +60,7 @@
   version = "v1.8.0"
 
 [[projects]]
-  digest = "1:bfc758d5a03d57d97226fac6934551c01bd76612adb119c177395b057a0a46db"
+  digest = "1:4652941215f23c7ad6546bab86964c72248a1134baa53f0df618661344ba5cac"
   name = "github.com/gogo/protobuf"
   packages = [
     "gogoproto",
@@ -46,16 +68,16 @@
     "protoc-gen-gogo/descriptor",
   ]
   pruneopts = "UT"
-  revision = "636bf0302bc95575d69441b25a2603156ffdddf1"
-  version = "v1.1.1"
+  revision = "ba06b47c162d49f2af050fb4c75bcbc86a159d5c"
+  version = "v1.2.1"
 
 [[projects]]
-  digest = "1:15042ad3498153684d09f393bbaec6b216c8eec6d61f63dff711de7d64ed8861"
+  digest = "1:573ca21d3669500ff845bdebee890eb7fc7f0f50c59f2132f2a0c6b03d85086a"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
   pruneopts = "UT"
-  revision = "b4deda0973fb4c70b50d226b1af49f3da59f5265"
-  version = "v1.1.0"
+  revision = "6c65a5562fc06764971b7c5d05c76c75e84bdbf7"
+  version = "v1.3.2"
 
 [[projects]]
   branch = "master"
@@ -66,12 +88,12 @@
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 
 [[projects]]
-  branch = "master"
-  digest = "1:39b27d1381a30421f9813967a5866fba35dc1d4df43a6eefe3b7a5444cb07214"
+  digest = "1:a74b5a8e34ee5843cd6e65f698f3e75614f812ff170c2243425d75bc091e9af2"
   name = "github.com/jmhodges/levigo"
   packages = ["."]
   pruneopts = "UT"
-  revision = "c42d9e0ca023e2198120196f842701bb4c55d7b9"
+  revision = "853d788c5c416eaaee5b044570784a96c7a26975"
+  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -138,19 +160,36 @@
   version = "v0.14.1"
 
 [[projects]]
-  digest = "1:3a5534ddb8fc03a15819d4862a51ff8f1532c764220e37e16306cd299286abce"
+  digest = "1:d81e99a4d90d48c385f599971aad02df3f08eaf900207cec1054c2ab8ed72bee"
+  name = "github.com/tendermint/iavl"
+  packages = [
+    ".",
+    "common",
+  ]
+  pruneopts = "UT"
+  revision = "e3e5a91edda5a9d525c49749ad102d9cf3b602b4"
+  version = "v0.12.4"
+
+[[projects]]
+  digest = "1:befff74dda49455eee17fd61959f8038332c46a896d03a2683e3a7f6a3255379"
   name = "github.com/tendermint/tendermint"
   packages = [
     "crypto/merkle",
     "crypto/tmhash",
     "libs/common",
-    "libs/db",
     "libs/log",
-    "libs/test",
   ]
   pruneopts = "UT"
-  revision = "28d75ec8016b7fb043735cbe4c4d92ec73355de7"
-  version = "v0.30.0"
+  revision = "76f3db06b8dbbfe5d6c4d0f4a6131b58ed36869d"
+  version = "v0.32.2"
+
+[[projects]]
+  digest = "1:8d27f63c10b2e5bd4e0de05c0d6f61e11210c2159453c5a4e51a7dde07efcd46"
+  name = "github.com/tendermint/tm-db"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "94017c88bf1d54efad5e99736182b97f32f73916"
+  version = "v0.1.1"
 
 [[projects]]
   branch = "master"
@@ -163,18 +202,27 @@
   pruneopts = "UT"
   revision = "9eb0be3963eaeb646c9a9b6d11f3da2b249bb2ca"
 
+[[projects]]
+  branch = "master"
+  digest = "1:fdfd985fe7956d77128572032636b5c1b7b58a81acd7089e96923e2f9539c573"
+  name = "golang.org/x/sys"
+  packages = ["unix"]
+  pruneopts = "UT"
+  revision = "51ab0e2deafac1f46c46ad59cf0921be2f180c3d"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/ColorPlatform/prism/crypto/merkle",
+    "github.com/ColorPlatform/prism/crypto/tmhash",
+    "github.com/ColorPlatform/prism/libs/common",
+    "github.com/ColorPlatform/prism/libs/db",
+    "github.com/ColorPlatform/prism/libs/test",
     "github.com/stretchr/testify/assert",
     "github.com/stretchr/testify/require",
     "github.com/tendermint/go-amino",
-    "github.com/tendermint/tendermint/crypto/merkle",
-    "github.com/tendermint/tendermint/crypto/tmhash",
-    "github.com/tendermint/tendermint/libs/common",
-    "github.com/tendermint/tendermint/libs/db",
-    "github.com/tendermint/tendermint/libs/test",
+    "github.com/tendermint/iavl",
     "golang.org/x/crypto/ripemd160",
     "golang.org/x/crypto/sha3",
   ]

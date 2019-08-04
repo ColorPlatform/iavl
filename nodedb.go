@@ -7,8 +7,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	dbm "github.com/tendermint/tendermint/libs/db"
+	"github.com/ColorPlatform/prism/crypto/tmhash"
+	dbm "github.com/ColorPlatform/prism/libs/db"
 )
 
 const (
