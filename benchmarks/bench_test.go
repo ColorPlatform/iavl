@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/tendermint/iavl"
+	"github.com/ColorPlatform/iavl"
 	db "github.com/ColorPlatform/prism/libs/db"
 )
 

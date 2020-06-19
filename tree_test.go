@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/stretchr/testify/require"
 	"github.com/ColorPlatform/prism/libs/db"
+	"github.com/stretchr/testify/require"
 
 	mathrand "math/rand"
 

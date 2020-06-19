@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/go-amino"
 	"github.com/ColorPlatform/prism/libs/db"
 	"github.com/ColorPlatform/prism/libs/test"
+	"github.com/tendermint/go-amino"
 )
 
 func TestTreeGetWithProof(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/tendermint/go-amino"
 	"github.com/ColorPlatform/prism/crypto/tmhash"
 	cmn "github.com/ColorPlatform/prism/libs/common"
+	"github.com/tendermint/go-amino"
 )
 
 var (

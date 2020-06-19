@@ -8,9 +8,9 @@ import (
 
 	mrand "math/rand"
 
-	"github.com/tendermint/go-amino"
 	cmn "github.com/ColorPlatform/prism/libs/common"
 	"github.com/ColorPlatform/prism/libs/db"
+	"github.com/tendermint/go-amino"
 )
 
 func randstr(length int) string {
