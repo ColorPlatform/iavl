@@ -13,3 +13,4 @@ mem*.out
 cpu*.pdf
 mem*.pdf
 benchmark/results/
+bench.db/

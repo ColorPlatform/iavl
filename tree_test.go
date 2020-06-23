@@ -16,15 +16,21 @@ import (
 	cmn "github.com/ColorPlatform/prism/libs/common"
 )
 
-var testLevelDB bool
-var testFuzzIterations int
+var testLevelDB bool = false
+var testFuzzIterations int = 100000
 var random *cmn.Rand
+
+// Call `testng.Init` before `init`. Make sure that the testing flags are processed before `tree_test` flags.
+var _ = func() bool {
+	testing.Init()
+	return true
+}()
 
 func init() {
 	random = cmn.NewRand()
 	random.Seed(0) // for determinism
-	flag.BoolVar(&testLevelDB, "test.leveldb", false, "test leveldb backend")
-	flag.IntVar(&testFuzzIterations, "test.fuzz-iterations", 100000, "number of fuzz testing iterations")
+	flag.BoolVar(&testLevelDB, "tree_test.leveldb", false, "test leveldb backend")
+	flag.IntVar(&testFuzzIterations, "tree_test.fuzz-iterations", 100000, "number of fuzz testing iterations")
 	flag.Parse()
 }
 
